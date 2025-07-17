@@ -914,6 +914,22 @@ MonoBehaviour:
   m_IgnoreFromBuild: 1
   m_ApplyToChildren: 1
   m_AffectedAgents: ffffffff
+--- !u!208 &1238757489
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238757486}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.2, y: 1, z: 0.2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1299305702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,6 +1751,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7311614056590318596, guid: 226a918b1275dbc43b81b63e3b04be23, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1238757487}
+    - targetCorrespondingSourceObject: {fileID: 7311614056590318596, guid: 226a918b1275dbc43b81b63e3b04be23, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238757489}
   m_SourcePrefab: {fileID: 100100000, guid: 226a918b1275dbc43b81b63e3b04be23, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

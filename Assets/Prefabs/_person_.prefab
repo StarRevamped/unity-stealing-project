@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3063618259816849531}
   - component: {fileID: 37477419939428903}
   - component: {fileID: 4998172974910847102}
-  - component: {fileID: 61507638576391494}
   - component: {fileID: -4221531633866193908}
+  - component: {fileID: 1615229018176607004}
   m_Layer: 0
   m_Name: _person_
   m_TagString: Untagged
@@ -112,18 +112,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &61507638576391494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7311614056590318596}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 920e8fec75a9d954790d2626eb34606f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!195 &-4221531633866193908
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146,3 +134,19 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!208 &1615229018176607004
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7311614056590318596}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.2, y: 1, z: 0.2}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
