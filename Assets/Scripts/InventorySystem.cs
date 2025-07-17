@@ -1,5 +1,7 @@
-/*
 using System.Collections;
+using System.Collections.Generic;
+using JetBrains.Annotations;
+using Meta.XR.BuildingBlocks.Editor;
 using UnityEngine;
 
 public class InventorySystem : MonoBehaviour
@@ -11,7 +13,7 @@ public class InventorySystem : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        itemsHeld.clear;
+        itemsHeld.Clear();
         haulWeight = 0;
         haulPrice = 0;
     }
@@ -19,12 +21,15 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         //need to figure out a keybind and its keycode
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
-            for (int i = 0; i < itemsHeld.length; i++){
+            foreach (GameObject item in itemsHeld)
+            {
                 //add spawn in here i just dont know yet
-                itemsHeld.RemoveAt(i);
+                Instantiate(item, player.transform.position, player.transform.rotation);
+                itemsHeld.Remove(item);
             }
         }
     }
@@ -34,10 +39,9 @@ public class InventorySystem : MonoBehaviour
         if(other.gameObject.tag == "StorableObject")
         {
             //need .getWeight and .getPrice to be made
-            itemsHeld.add(other);
+            itemsHeld.Add(other);
             //haulWeight += other.getWeight();
             //haulPrice += other.getPrice();
         }
     }
 }
-*/
