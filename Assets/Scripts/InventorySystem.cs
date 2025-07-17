@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using UnityEngine;
 
@@ -34,8 +35,9 @@ public class InventorySystem : MonoBehaviour
         {
             //need .getWeight and .getPrice to be made
             itemsHeld.add(other);
-            haulWeight += other.getWeight();
-            haulPrice += other.getPrice();
+            //haulWeight += other.getWeight();
+            //haulPrice += other.getPrice();
         }
     }
 }
+*/
