@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 1846438505873770126}
   - component: {fileID: 2041626103128727311}
   - component: {fileID: 7888842761430949190}
+  - component: {fileID: 3307758464883956952}
   m_Layer: 0
   m_Name: Apple
   m_TagString: StorableObject
@@ -497,4 +498,21 @@ MonoBehaviour:
   _maxGrabPoints: -1
   _rigidbody: {fileID: 2041626103128727311}
   _kinematicWhileSelected: 1
-  _throwWhenUnselected: 1
+  _throwWhenUnselected: 0
+--- !u!114 &3307758464883956952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033610688372687225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productName: Apple
+  container: shelf
+  isStorable: 1
+  price: 1
+  weight: 1

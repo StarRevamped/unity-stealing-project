@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 888388471594141483}
   - component: {fileID: 3150922235411114676}
   - component: {fileID: 1562555373997542928}
+  - component: {fileID: -2765786035998253836}
   m_Layer: 0
   m_Name: Can of stuff
   m_TagString: StorableObject
@@ -162,6 +163,23 @@ MonoBehaviour:
   _rigidbody: {fileID: 3150922235411114676}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+--- !u!114 &-2765786035998253836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636219883344912292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productName: Unknown Can
+  container: shelf
+  isStorable: 1
+  price: 2
+  weight: 2
 --- !u!1 &6170620317086069728
 GameObject:
   m_ObjectHideFlags: 0

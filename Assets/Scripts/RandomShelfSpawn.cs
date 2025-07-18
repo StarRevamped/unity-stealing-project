@@ -15,9 +15,6 @@ public class RandomShelfSpawn : MonoBehaviour
             int randomNumber = rnd.Next(0, spawnableObjects.Length);
             Instantiate(spawnableObjects[randomNumber], location.transform.position, location.transform.rotation);
         }
-        Console.WriteLine("FUCK!");
-        Console.WriteLine(spawnableObjects.Length);
-        Console.WriteLine(spawningLocations.Length);
     }
     // Update is called once per frame
     void Update()

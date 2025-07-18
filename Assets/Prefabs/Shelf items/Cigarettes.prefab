@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 6830632058684698507}
   - component: {fileID: 8846994875194936405}
   - component: {fileID: 7534117358919295749}
+  - component: {fileID: 6625675000013612406}
   m_Layer: 0
   m_Name: Cigarettes
   m_TagString: StorableObject
@@ -247,6 +248,23 @@ MonoBehaviour:
   _rigidbody: {fileID: 8846994875194936405}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+--- !u!114 &6625675000013612406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133346927889407758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  productName: Cigarettes
+  container: cashierShelf
+  isStorable: 1
+  price: 5
+  weight: 1
 --- !u!1 &5062113961490596330
 GameObject:
   m_ObjectHideFlags: 0
