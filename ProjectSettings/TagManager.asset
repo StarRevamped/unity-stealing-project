@@ -4,8 +4,9 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - StorableObject
   - ShelfSpawner
+  - Shelf
+  - sellingProduct
   layers:
   - Default
   - TransparentFX
