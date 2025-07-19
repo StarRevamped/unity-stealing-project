@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 3307758464883956952}
   m_Layer: 0
   m_Name: Apple
-  m_TagString: StorableObject
+  m_TagString: sellingProduct
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -511,8 +511,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item: {fileID: 8033610688372687225}
   productName: Apple
   container: shelf
-  isStorable: 1
+  storable: 1
   price: 1
   weight: 1

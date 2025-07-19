@@ -428,9 +428,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599410502481889060}
-  - component: {fileID: 6388505788456080818}
   m_Layer: 0
-  m_Name: Shelf2
+  m_Name: ShelfModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -479,31 +478,6 @@ Transform:
   - {fileID: 3309142679361396397}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6388505788456080818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3378722999065618910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db582047829690647ab063138b449a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawningLocations:
-  - {fileID: 5471984335509629149}
-  - {fileID: 1734723276700279102}
-  - {fileID: 1215282222400427018}
-  - {fileID: 7599626623577744134}
-  - {fileID: 5803107545530230101}
-  - {fileID: 6657342051623205574}
-  - {fileID: 4356491265582994363}
-  - {fileID: 6906858256477053430}
-  - {fileID: 4127134560002807691}
-  - {fileID: 4161998441693787124}
-  - {fileID: 965032082932864346}
-  - {fileID: 9162183510244813984}
 --- !u!1 &4127134560002807691
 GameObject:
   m_ObjectHideFlags: 0
