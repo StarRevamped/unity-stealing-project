@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Meta.XR.BuildingBlocks.Editor;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
@@ -34,14 +35,25 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Product other)
     {
-        if(other.gameObject.tag == "StorableObject")
+        if(other.gameObject.tag == "sellingProduct" && other.IsStorable())
         {
-            //need .getWeight and .getPrice to be made
-            itemsHeld.Add(other);
-            //haulWeight += other.getWeight();
-            //haulPrice += other.getPrice();
+            if( 500 >= (haulWeight += other.GetWeight()))
+            {
+                itemsHeld.Add(other);
+                haulWeight += other.GetWeight();
+                haulPrice += other.GetPrice();
+                Destroy(other);
+            }
+            else
+            {
+                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You can't hold that much! Hit the gym.");
+            }
+        }
+        else
+        {
+            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
         }
     }
 }
