@@ -17,16 +17,14 @@ public class RandomShelfSpawn : MonoBehaviour
     public String[] spawnerTags;
     private GameObject[] spawnableObjects;
     private List<List<Product>> allProducts = new List<List<Product>>();
-    
-    //List order: shelf,fridge,cashierShelf
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         //do NOT judge me. We can for loop this when we know how many containers we have. for now just do it the funky way
         allProducts.Add(new List<Product>()); //Shelf
+        allProducts.Add(new List<Product>()); //Cashier shelf
         allProducts.Add(new List<Product>()); //Fridge
-        allProducts.Add(new List<Product>()); //Cashier Shelf
 
         spawnableObjects = GameObject.FindGameObjectsWithTag("sellingProduct");
         foreach (GameObject item in spawnableObjects)
@@ -37,11 +35,11 @@ public class RandomShelfSpawn : MonoBehaviour
                 case "shelf":
                     allProducts[0].Add(temp);
                     break;
-                case "fridge":
-                    allProducts[2].Add(temp);
-                    break;
                 case "cashierShelf":
                     allProducts[1].Add(temp);
+                    break;
+                case "fridge":
+                    allProducts[2].Add(temp);
                     break;
                 default:
                     UnityEngine.Debug.Log("Error in RandomShelfSpawn.cs | Could not find container for " + temp.GetProductName());
@@ -60,11 +58,14 @@ public class RandomShelfSpawn : MonoBehaviour
     {
 
     }
-    private void SpawnItems(String container, List<Product> productList)
+    private void SpawnItems(String spawner, List<Product> productList)
     {
-        GameObject[] spawnLocations = GameObject.FindGameObjectsWithTag(container);
-        foreach (GameObject location in spawnLocations) {
+        GameObject[] spawnLocations = GameObject.FindGameObjectsWithTag(spawner);
+        UnityEngine.Debug.Log("spawningLocations list has been filled.");
+        foreach (GameObject location in spawnLocations)
+        {
             int randomNumber = rnd.Next(0, productList.Capacity);
+            UnityEngine.Debug.Log(randomNumber);
             Instantiate(productList[randomNumber].GetObject(), location.transform.position, location.transform.rotation);
         }
     }
