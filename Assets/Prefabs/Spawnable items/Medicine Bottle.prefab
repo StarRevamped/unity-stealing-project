@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 6834137103035464300}
   - component: {fileID: 2510885030371868208}
   - component: {fileID: 2651539069048373447}
-  - component: {fileID: -4706145572409274219}
   m_Layer: 0
   m_Name: Medicine Bottle
   m_TagString: sellingProduct
@@ -283,24 +282,6 @@ MonoBehaviour:
   _rigidbody: {fileID: 2510885030371868208}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &-4706145572409274219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7062580030660078835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  productName: Medicine Bottle
-  container: cashierShelf
-  storable: 1
-  price: 20
-  weight: 3
 --- !u!1 &7964547273366917338
 GameObject:
   m_ObjectHideFlags: 0
