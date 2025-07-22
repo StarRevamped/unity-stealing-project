@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Meta.XR.BuildingBlocks.Editor;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,16 +35,17 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
-    public void OnTriggerEnter(Product other)
+    public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "sellingProduct" && other.IsStorable())
+        Product item = other.gameObject.GetComponent<Product>();
+        if (other.gameObject.tag == "sellingProduct" && item.IsStorable())
         {
-            if(100 >= (haulWeight += other.GetWeight()))
+            if (100 >= (haulWeight += item.GetWeight()))
             {
-                itemsHeld.Add(other);
-                haulWeight += other.GetWeight();
-                haulPrice += other.GetPrice();
-                Destroy(other);
+                itemsHeld.Add(item);
+                haulWeight += item.GetWeight();
+                haulPrice += item.GetPrice();
+                Destroy(item);
             }
             else
             {
