@@ -1403,7 +1403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7844438496725111107}
   m_Layer: 0
-  m_Name: Cash Register (BROKEN)
+  m_Name: Cash Register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

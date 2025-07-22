@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Meta.XR.BuildingBlocks.Editor;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
     //need to make sure haulWeight and haulPrice are accessible to other scripts
-    public int haulWeight;
-    public int haulPrice;
+    private int haulWeight = 0;
+    private int haulPrice = 0;
     private ArrayList itemsHeld = new ArrayList();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,27 +25,27 @@ public class InventorySystem : MonoBehaviour
     {
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
         //need to figure out a keybind and its keycode
-        if (Input.GetKey(KeyCode.W))
+        if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             foreach (GameObject item in itemsHeld)
             {
-                //add spawn in here i just dont know yet
                 Instantiate(item, player.transform.position, player.transform.rotation);
                 itemsHeld.Remove(item);
             }
         }
     }
 
-    public void OnTriggerEnter(Product other)
+    public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "sellingProduct" && other.IsStorable())
+        Product item = other.gameObject.GetComponent<Product>();
+        if (other.gameObject.tag == "sellingProduct" && item.IsStorable())
         {
-            if( 500 >= (haulWeight += other.GetWeight()))
+            if (100 >= (haulWeight += item.GetWeight()))
             {
-                itemsHeld.Add(other);
-                haulWeight += other.GetWeight();
-                haulPrice += other.GetPrice();
-                Destroy(other);
+                itemsHeld.Add(item);
+                haulWeight += item.GetWeight();
+                haulPrice += item.GetPrice();
+                Destroy(item);
             }
             else
             {
@@ -55,5 +56,10 @@ public class InventorySystem : MonoBehaviour
         {
             GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
         }
+    }
+
+    public int GetHaulWeight()
+    {
+        return haulWeight;
     }
 }
