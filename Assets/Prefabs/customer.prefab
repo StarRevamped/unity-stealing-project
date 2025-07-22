@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 721304870512237974}
   - component: {fileID: 7938744476134064495}
   - component: {fileID: -7350461988263146456}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: customer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6558504003107767570}
   - component: {fileID: 1845900791786336120}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: visionCone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

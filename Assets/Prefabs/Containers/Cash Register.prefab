@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3132619549675431542}
   - component: {fileID: 4060489721377842300}
   - component: {fileID: 82941493649065501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 2698596022545245785}
   - component: {fileID: 2245505923016693430}
   - component: {fileID: 6703829212575455600}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 4287954629385627414}
   - component: {fileID: 8579887328674751217}
   - component: {fileID: 161537931200974754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1970825657496108730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (4)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 1907446645536205466}
   - component: {fileID: 2789493579787940872}
   - component: {fileID: 8700057507810005826}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2931001331998176661}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (6)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 6565523593003575029}
   - component: {fileID: 5460450230584731930}
   - component: {fileID: 7167907118602968088}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 7439111830784666739}
   - component: {fileID: 8487615800872961305}
   - component: {fileID: 1041086476078509035}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -722,7 +722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8172140258350050736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (5)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -756,7 +756,7 @@ GameObject:
   - component: {fileID: 6470227216924612503}
   - component: {fileID: 2960601517746186252}
   - component: {fileID: 8471677863034004651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -864,7 +864,7 @@ GameObject:
   - component: {fileID: 8415917725185099003}
   - component: {fileID: 7598510491111465480}
   - component: {fileID: 6514135789312797143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,7 @@ GameObject:
   - component: {fileID: 20484258359943136}
   - component: {fileID: 6992500569132280807}
   - component: {fileID: 352555866385051602}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 6159612433230288531}
   - component: {fileID: 8462963051338184962}
   - component: {fileID: 8720891631011722438}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1189,7 +1189,7 @@ GameObject:
   - component: {fileID: 1588163714307294396}
   - component: {fileID: 1102819164162674252}
   - component: {fileID: 1726320977629622254}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1297,7 +1297,7 @@ GameObject:
   - component: {fileID: 7156797419842041814}
   - component: {fileID: 1713460052387815834}
   - component: {fileID: 3183595813978871442}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1402,7 +1402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7844438496725111107}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cash Register
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1476,7 +1476,7 @@ GameObject:
   - component: {fileID: 4996568862547719992}
   - component: {fileID: 5877508480879738119}
   - component: {fileID: 5872931591071495125}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1584,7 +1584,7 @@ GameObject:
   - component: {fileID: 4920888443753147880}
   - component: {fileID: 8196646407851571397}
   - component: {fileID: 7002000264942337924}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1689,7 +1689,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6590627340527093846}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (2)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -1723,7 +1723,7 @@ GameObject:
   - component: {fileID: 8073592127623647951}
   - component: {fileID: 9049596053456507983}
   - component: {fileID: 5072524173500512373}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1831,7 +1831,7 @@ GameObject:
   - component: {fileID: 1852088082437242830}
   - component: {fileID: 3230584729631669290}
   - component: {fileID: 8955551592618691441}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   - component: {fileID: 8943653239424134855}
   - component: {fileID: 5068458639639091052}
   - component: {fileID: 7712609265813055859}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2049,7 +2049,7 @@ GameObject:
   - component: {fileID: 7129686191216078904}
   - component: {fileID: 5678873182908683497}
   - component: {fileID: 577460186672373042}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2942102318818663005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -2189,7 +2189,7 @@ GameObject:
   - component: {fileID: 1697852244253484309}
   - component: {fileID: 4408572614294174429}
   - component: {fileID: 666443104382471879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2298,7 +2298,7 @@ GameObject:
   - component: {fileID: 7590218817046443920}
   - component: {fileID: 7873845637451704854}
   - component: {fileID: 863961017856697455}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2406,7 +2406,7 @@ GameObject:
   - component: {fileID: 6551341768436912635}
   - component: {fileID: 3483601282325818142}
   - component: {fileID: 5628521175410185537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2511,7 +2511,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4891370936445954055}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (3)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -2542,7 +2542,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8547443527898728350}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (7)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -2576,7 +2576,7 @@ GameObject:
   - component: {fileID: 6341568842785267332}
   - component: {fileID: 1653269802152116375}
   - component: {fileID: 9062827322084889324}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2685,7 +2685,7 @@ GameObject:
   - component: {fileID: 1701850131349451290}
   - component: {fileID: 4013394639833038655}
   - component: {fileID: 6643333382318959869}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2793,7 +2793,7 @@ GameObject:
   - component: {fileID: 5441468990144427942}
   - component: {fileID: 797725723406646628}
   - component: {fileID: 8635142573649283248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2901,7 +2901,7 @@ GameObject:
   - component: {fileID: 7812729239253034173}
   - component: {fileID: 1639533874579212647}
   - component: {fileID: 4647250707021386907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 479885244080091865}
   - component: {fileID: 1571315044079255907}
   - component: {fileID: 6436654537072502907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3119,7 +3119,7 @@ GameObject:
   - component: {fileID: 5385870636433858866}
   - component: {fileID: 1518946107901409688}
   - component: {fileID: 4849807388803416629}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3227,7 +3227,7 @@ GameObject:
   - component: {fileID: 7481940031843569757}
   - component: {fileID: 2915875830253538699}
   - component: {fileID: 1257961213520779780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3336,7 +3336,7 @@ GameObject:
   - component: {fileID: 5398337761334106270}
   - component: {fileID: 5969912758588799404}
   - component: {fileID: 4343981618237846075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3444,7 +3444,7 @@ GameObject:
   - component: {fileID: 7045996312487690986}
   - component: {fileID: 2279175426105375832}
   - component: {fileID: 6334049375856117149}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Quad (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3550,7 +3550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1489668155444609866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cashier shelf spawner (1)
   m_TagString: RegisterSpawner
   m_Icon: {fileID: 0}
@@ -3584,7 +3584,7 @@ GameObject:
   - component: {fileID: 3319943377337444390}
   - component: {fileID: 4670232236150858894}
   - component: {fileID: 3892330716770419220}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3692,7 +3692,7 @@ GameObject:
   - component: {fileID: 3547508107279818682}
   - component: {fileID: 6222973858720098463}
   - component: {fileID: 2045597824900605659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6055607452053911371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (3)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5349198723183548768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5848117862864279787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (13)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8065146617003567162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (14)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2706019263599625637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (5)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6428741451223538087}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (12)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8579313284922965439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (11)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2401881844112531897}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (2)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5083646079017835387}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (6)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -288,7 +288,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2312534154885486580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (8)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -319,7 +319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5937126660675047578}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (7)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2633033803150384857}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (1)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1133142202908539060}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (15)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -412,7 +412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7625832484204565704}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (9)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8031062347499799627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (4)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -474,7 +474,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6773519116414745007}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (10)
   m_TagString: ShelfSpawner
   m_Icon: {fileID: 0}
@@ -559,6 +559,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7e6e4be7bdd7586459bf36b6a96967cc, type: 3}
       propertyPath: m_Name
       value: ShelfFinal
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7e6e4be7bdd7586459bf36b6a96967cc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 7e6e4be7bdd7586459bf36b6a96967cc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
