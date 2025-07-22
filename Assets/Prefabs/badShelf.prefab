@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2466420869139779500}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2205363121870274706}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7922360687782435204}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 6661958119914607735}
   - component: {fileID: 7769542671304106761}
   - component: {fileID: 8279451963109776950}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 33990642619133497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7048907830905101238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 6320079558004740592}
   - component: {fileID: 3140634462180088454}
   - component: {fileID: 3172785068187146206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: badShelf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,16 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db582047829690647ab063138b449a35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawningLocations:
-  - {fileID: 2077879586562341199}
-  - {fileID: 2277073139231753289}
-  - {fileID: 150569705011019294}
-  - {fileID: 5656101833448978553}
-  - {fileID: 4179834319702105250}
-  - {fileID: 1111477605019446845}
-  - {fileID: 5638873575264968663}
-  - {fileID: 4534134288116511985}
-  - {fileID: 1701081256894277533}
+  spawnerTags: []
 --- !u!1 &3957776308848597729
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,7 +356,7 @@ GameObject:
   - component: {fileID: 754081815151062359}
   - component: {fileID: 903267236971576881}
   - component: {fileID: 2197227326596930449}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4269802548884423718}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1261541787117474474}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +523,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5002490085489522069}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +554,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 398398718250850357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: shelfSpawn (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,7 +588,7 @@ GameObject:
   - component: {fileID: 8689012062043516769}
   - component: {fileID: 5821472822281623784}
   - component: {fileID: 7925547376371585697}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -705,7 +696,7 @@ GameObject:
   - component: {fileID: 3165076215216971237}
   - component: {fileID: 7366026964301235665}
   - component: {fileID: 746539267622399385}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
