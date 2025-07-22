@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3472544127056129605}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 2651539069048373447}
-  _rigidbody: {fileID: 2510885030371868208}
+  _rigidbody: {fileID: 0}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -112,7 +112,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 2651539069048373447}
-  _rigidbody: {fileID: 2510885030371868208}
+  _rigidbody: {fileID: 0}
   _grabSource: {fileID: 0}
   _useClosestPointAsGrabSource: 0
   _releaseDistance: 0
@@ -130,8 +130,10 @@ GameObject:
   - component: {fileID: 8604588172858257827}
   - component: {fileID: 6374763407851042774}
   - component: {fileID: 6834137103035464300}
-  - component: {fileID: 2510885030371868208}
   - component: {fileID: 2651539069048373447}
+  - component: {fileID: 2510885030371868208}
+  - component: {fileID: 1390407975572481501}
+  - component: {fileID: 7987778480271744475}
   m_Layer: 0
   m_Name: Medicine Bottle
   m_TagString: sellingProduct
@@ -148,7 +150,7 @@ Transform:
   m_GameObject: {fileID: 7062580030660078835}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.6, y: 0.325, z: -9.083}
+  m_LocalPosition: {x: 2.918281, y: -2.607, z: -14.487742}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -233,6 +235,28 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &2651539069048373447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062580030660078835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 14707584370716558}
+  _maxGrabPoints: -1
+  _rigidbody: {fileID: 0}
+  _kinematicWhileSelected: 1
+  _throwWhenUnselected: 1
 --- !u!54 &2510885030371868208
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -255,12 +279,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2651539069048373447
+--- !u!114 &1390407975572481501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -282,6 +306,24 @@ MonoBehaviour:
   _rigidbody: {fileID: 2510885030371868208}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+--- !u!114 &7987778480271744475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062580030660078835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf93b3885d61882489105bc4de1b73b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 7062580030660078835}
+  productName: Medicine Bottle
+  container: cashierShelf
+  storable: 1
+  price: 20
+  weight: 2
 --- !u!1 &7964547273366917338
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,8 +352,8 @@ Transform:
   m_GameObject: {fileID: 7964547273366917338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9894793, z: 0}
-  m_LocalScale: {x: 1.2, y: 0.06743997, z: 1.2}
+  m_LocalPosition: {x: 0, y: 0.9894799, z: 0}
+  m_LocalScale: {x: 1.1999999, y: 0.067439966, z: 1.1999999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 14707584370716558}
@@ -420,8 +462,8 @@ Transform:
   m_GameObject: {fileID: 8561530618034671311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1338007, z: 0}
-  m_LocalScale: {x: 1, y: 0.06743997, z: 1}
+  m_LocalPosition: {x: 0, y: 1.133801, z: 0}
+  m_LocalScale: {x: 1, y: 0.067439966, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 14707584370716558}
