@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class InventorySystem : MonoBehaviour
 {
     //need to make sure haulWeight and haulPrice are accessible to other scripts
-    private int haulWeight = 0;
+    public int haulWeight = 0;
     private int haulPrice = 0;
     private ArrayList itemsHeld = new ArrayList();
     // Start is called once before the first execution of Update after the MonoBehaviour is created

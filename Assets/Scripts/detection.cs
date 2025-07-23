@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using Oculus.Interaction.DebugTree;
 
 public class detection : MonoBehaviour
 {
@@ -9,9 +10,13 @@ public class detection : MonoBehaviour
     public float VisionRange;
     public float VisionAngle;
     public LayerMask VisionObstructingLayer;
+    public LayerMask playerLayer;
     public int VisionConeResolution = 120;
     Mesh VisionConeMesh;
     MeshFilter MeshFilter_;
+    public int detectMin;
+    public int detectPerSec;
+    public int detectionLevel;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,6 +32,8 @@ public class detection : MonoBehaviour
     {
         DrawVisionCone();
     }
+
+   
     void DrawVisionCone()//this method creates the vision cone mesh
     {
         int[] triangles = new int[(VisionConeResolution - 1) * 3];
@@ -52,7 +59,13 @@ public class detection : MonoBehaviour
                 Vertices[i + 1] = VertForward * VisionRange;
             }
 
+            if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit intersect, VisionRange, playerLayer))
+            {
+                if (haulWeight >= detectMin)
+                {
 
+                }
+            }
             Currentangle += angleIcrement;
         }
         for (int i = 0, j = 0; i < triangles.Length; i += 3, j++)
