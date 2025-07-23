@@ -11,7 +11,7 @@ using System.Collections.Generic;
 public class RandomShelfSpawn : MonoBehaviour
 {
     //rnd is the random number generator. I put it here to stop it from remaking it 3 million times
-    
+    private readonly System.Random rnd = new();
     public String[] spawnerTags;
     private GameObject[] spawnableObjects;
     private List<List<Product>> allProducts = new List<List<Product>>();
@@ -53,30 +53,32 @@ public class RandomShelfSpawn : MonoBehaviour
             }
         }
         //stop reading my code
-        
-        for (int i = 0; i < spawnerTags.Length; i++)
-        {
-            SpawnItems(spawnerTags[i], allProducts[i]);
-            UnityEngine.Debug.Log("Finished spawning: " + spawnerTags[i]);
-        }
-        
+        ShelfFiller();
     }
     // Update is called once per frame
     void Update()
     {
 
     }
-    private void SpawnItems(String spawner, List<Product> productList)
+    private void SummonItems(String spawner, List<Product> productList)
     {
         GameObject[] spawnLocations = GameObject.FindGameObjectsWithTag(spawner);
         foreach (GameObject location in spawnLocations)
         {
-            System.Random rnd = new();
+
             UnityEngine.Debug.Log("Trying to spawn item at" + location.transform.position);
             int randomNumber = rnd.Next(0, productList.Count);
             Instantiate(productList[randomNumber].GetObject(), location.transform.position, location.transform.rotation);
             UnityEngine.Debug.Log("Spawned: " + productList[randomNumber].GetProductName());
         }
-        
+
+    }
+    public void ShelfFiller()
+    {
+        for (int i = 0; i < spawnerTags.Length; i++)
+        {
+            SummonItems(spawnerTags[i], allProducts[i]);
+            UnityEngine.Debug.Log("Finished spawning: " + spawnerTags[i]);
+        }
     }
 }

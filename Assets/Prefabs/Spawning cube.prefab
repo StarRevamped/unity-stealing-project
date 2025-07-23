@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1093083314884280871}
   - component: {fileID: 5292304623092749274}
   - component: {fileID: 1886194345212651035}
+  - component: {fileID: -6535929128924872762}
   m_Layer: 0
   m_Name: Spawning cube
   m_TagString: Untagged
@@ -125,3 +126,15 @@ MonoBehaviour:
   - ShelfSpawner
   - RegisterSpawner
   - DisplaySpawner
+--- !u!114 &-6535929128924872762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2882438734341894281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e18f479d63a134e9edc4b41873278e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
