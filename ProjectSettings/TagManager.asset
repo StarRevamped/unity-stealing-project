@@ -9,6 +9,9 @@ TagManager:
   - sellingProduct
   - RegisterSpawner
   - DisplaySpawner
+  - AisleSpawner
+  - aisle
+  - SUPERSPAWNER
   layers:
   - Default
   - TransparentFX
