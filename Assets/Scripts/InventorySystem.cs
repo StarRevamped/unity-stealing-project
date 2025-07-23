@@ -69,4 +69,8 @@ public class InventorySystem : MonoBehaviour
     {
         return haulPrice;
     }
+    public bool GetJustAddedToInv()
+    {
+        return justAddedToInv;
+    }
 }
