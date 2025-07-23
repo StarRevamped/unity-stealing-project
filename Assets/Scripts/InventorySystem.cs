@@ -42,9 +42,9 @@ public class InventorySystem : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         Product item = other.gameObject.GetComponent<Product>();
-        Rigidbody rb = item.GetComponent<Rigidbody>();
-        bool isKinematic = rb.isKinematic;
-        if (other.gameObject.tag == "sellingProduct" && item.IsStorable() && isKinematic)
+        //Rigidbody rb = item.GetComponent<Rigidbody>();
+        //bool isKinematic = rb.isKinematic;
+        if (item.gameObject.tag == "sellingProduct" && item.IsStorable())
         {
             if (100 >= (haulWeight += item.GetWeight()))
             {
