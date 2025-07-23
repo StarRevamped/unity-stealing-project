@@ -2,16 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Meta.XR.BuildingBlocks.Editor;
+using Oculus.Interaction.Body.Input;
 using Unity.VisualScripting;
+using UnityEditor.Callbacks;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InventorySystem : MonoBehaviour
 {
     //need to make sure haulWeight and haulPrice are accessible to other scripts
-    public int haulWeight = 0;
-    private int haulPrice = 0;
-    private bool justAddedToInv = false;
+    private int haulWeight;
+    private int haulPrice;
+    private bool justAddedToInv;
     private ArrayList itemsHeld = new ArrayList();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -40,7 +42,9 @@ public class InventorySystem : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         Product item = other.gameObject.GetComponent<Product>();
-        if (other.gameObject.tag == "sellingProduct" && item.IsStorable())
+        Rigidbody rb = item.GetComponent<Rigidbody>();
+        bool isKinematic = rb.isKinematic;
+        if (other.gameObject.tag == "sellingProduct" && item.IsStorable() && isKinematic)
         {
             if (100 >= (haulWeight += item.GetWeight()))
             {
