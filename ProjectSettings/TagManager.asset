@@ -8,6 +8,7 @@ TagManager:
   - Shelf
   - sellingProduct
   - RegisterSpawner
+  - DisplaySpawner
   layers:
   - Default
   - TransparentFX
