@@ -14,7 +14,7 @@ public class InventorySystem : MonoBehaviour
     private int haulWeight;
     private int haulPrice;
     private bool justAddedToInv;
-    private ArrayList itemsHeld = new ArrayList();
+    private List<Product> itemsHeld = new List<Product>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,7 +31,7 @@ public class InventorySystem : MonoBehaviour
         justAddedToInv = false;
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
-            foreach (GameObject item in itemsHeld)
+            foreach (Product item in itemsHeld)
             {
                 Instantiate(item, player.transform.position, player.transform.rotation);
                 itemsHeld.Remove(item);
