@@ -11,6 +11,7 @@ public class InventorySystem : MonoBehaviour
     //need to make sure haulWeight and haulPrice are accessible to other scripts
     private int haulWeight = 0;
     private int haulPrice = 0;
+    private bool justAddedToInv = false;
     private ArrayList itemsHeld = new ArrayList();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,13 +19,14 @@ public class InventorySystem : MonoBehaviour
         itemsHeld.Clear();
         haulWeight = 0;
         haulPrice = 0;
+        justAddedToInv = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-        //need to figure out a keybind and its keycode
+        justAddedToInv = false;
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
             foreach (GameObject item in itemsHeld)
@@ -46,6 +48,7 @@ public class InventorySystem : MonoBehaviour
                 haulWeight += item.GetWeight();
                 haulPrice += item.GetPrice();
                 Destroy(item);
+                justAddedToInv = true;
             }
             else
             {
@@ -61,5 +64,9 @@ public class InventorySystem : MonoBehaviour
     public int GetHaulWeight()
     {
         return haulWeight;
+    }
+    public int GetHaulPrice()
+    {
+        return haulPrice;
     }
 }
