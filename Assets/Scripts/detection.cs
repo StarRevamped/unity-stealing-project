@@ -61,12 +61,20 @@ public class detection : MonoBehaviour
 
             if (Physics.Raycast(transform.position, RaycastDirection, out RaycastHit intersect, VisionRange, playerLayer))
             {
-                if (haulWeight >= detectMin)
+                if (GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>().GetHaulWeight() >= detectMin)
                 {
-
+                    detectionLevel += detectPerSec;
+                }
+                if (GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>().GetJustAddedToInv())
+                {
+                    detectionLevel += 10;
                 }
             }
-            Currentangle += angleIcrement;
+            else
+            {
+                detectionLevel -= (detectPerSec/10);
+            }
+                Currentangle += angleIcrement;
         }
         for (int i = 0, j = 0; i < triangles.Length; i += 3, j++)
         {
@@ -78,5 +86,9 @@ public class detection : MonoBehaviour
         VisionConeMesh.vertices = Vertices;
         VisionConeMesh.triangles = triangles;
         MeshFilter_.mesh = VisionConeMesh;
+    }
+    public double GetDetection()
+    {
+        return detectionLevel;
     }
 }

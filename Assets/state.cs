@@ -8,3 +8,7 @@ public enum state
 	chase,
 	patrol
 }
+
+internal class BlackboardEnumAttribute : Attribute
+{
+}
