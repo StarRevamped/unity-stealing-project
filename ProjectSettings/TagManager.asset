@@ -12,6 +12,8 @@ TagManager:
   - AisleSpawner
   - aisle
   - SUPERSPAWNER
+  - visionCone
+  - customer
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Water
   - UI
   - walls
-  - 
+  - player
   - 
   - 
   - 

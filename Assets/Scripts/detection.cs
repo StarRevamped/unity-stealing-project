@@ -1,8 +1,9 @@
-using UnityEngine;
+using Oculus.Interaction.DebugTree;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using Oculus.Interaction.DebugTree;
+using UnityEngine;
+using UnityEngine.AI;
 
 public class detection : MonoBehaviour
 {
@@ -14,13 +15,18 @@ public class detection : MonoBehaviour
     public int VisionConeResolution = 120;
     Mesh VisionConeMesh;
     MeshFilter MeshFilter_;
-    public int detectMin;
-    public int detectPerSec;
-    public int detectionLevel;
-    
+    public double detectMin;
+    public double detectPerSec;
+    public double detectionLevel;
+    public double detectMax;
+    public Transform transformToFollow;
+    //NavMesh Agent variable
+    NavMeshAgent agent;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        agent = GetComponent<NavMeshAgent>();
         transform.AddComponent<MeshRenderer>().material = VisionConeMaterial;
         MeshFilter_ = transform.AddComponent<MeshFilter>();
         VisionConeMesh = new Mesh();
@@ -31,6 +37,10 @@ public class detection : MonoBehaviour
     void Update()
     {
         DrawVisionCone();
+        if (detectionLevel >= detectMax)
+        {
+            agent.destination = transformToFollow.position;
+        }
     }
 
    
@@ -87,6 +97,7 @@ public class detection : MonoBehaviour
         VisionConeMesh.triangles = triangles;
         MeshFilter_.mesh = VisionConeMesh;
     }
+
     public double GetDetection()
     {
         return detectionLevel;

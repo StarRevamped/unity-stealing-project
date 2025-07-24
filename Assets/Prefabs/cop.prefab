@@ -50,7 +50,13 @@ MonoBehaviour:
   VisionObstructingLayer:
     serializedVersion: 2
     m_Bits: 64
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
   VisionConeResolution: 120
+  detectMin: 0
+  detectPerSec: 0
+  detectionLevel: 0
 --- !u!1 &4666049615041024099
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,10 +69,10 @@ GameObject:
   - component: {fileID: 148049460806745945}
   - component: {fileID: 3028322292539267882}
   - component: {fileID: 9007963955057780659}
-  - component: {fileID: 3945029663316588581}
   - component: {fileID: 6236581464482852049}
   - component: {fileID: 6467426610706087217}
   - component: {fileID: -5986293728592994935}
+  - component: {fileID: 1623527304238807857}
   m_Layer: 6
   m_Name: cop
   m_TagString: Untagged
@@ -166,34 +172,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3945029663316588581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4666049615041024099}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0038c16c34866b4f9e25c9c0dc0f7e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Graph: {fileID: -4567217656114050350, guid: 047affcfc82f73948bff9ca9b1a53a03, type: 2}
-  m_BlackboardVariableOverridesList:
-  - rid: 6752480726213460169
-  m_IsInitialised: 0
-  m_IsStarted: 0
-  references:
-    version: 2
-    RefIds:
-    - rid: 6752480726213460169
-      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
-      data:
-        GUID:
-          m_Value0: 1
-          m_Value1: 0
-        Name: Self
-        m_Value: {fileID: 4666049615041024099}
 --- !u!114 &6236581464482852049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +236,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1623527304238807857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666049615041024099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b58303c24067604bae2b2f3efb51fbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 6467426610706087217}
+  range: 50
+  centrePoint: {fileID: 4173256398062105132}
