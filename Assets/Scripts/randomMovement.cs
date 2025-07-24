@@ -1,9 +1,10 @@
+/*
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
 
-public class randomMovement : MonoBehaviour
+public class RandomMovement : MonoBehaviour
 {
     public NavMeshAgent agent;
     public float range;
@@ -45,3 +46,4 @@ public class randomMovement : MonoBehaviour
         return false;
     }
 }
+*/

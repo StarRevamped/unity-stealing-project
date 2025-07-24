@@ -1,3 +1,4 @@
+/*
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -90,7 +91,7 @@ public class InventorySystem : MonoBehaviour
            //GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
         }
     }
-*/
+
 
     public int GetHaulWeight()
     {
@@ -118,3 +119,4 @@ public class InventorySystem : MonoBehaviour
     }
     
 }
+*/
