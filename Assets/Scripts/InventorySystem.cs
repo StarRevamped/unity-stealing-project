@@ -14,7 +14,7 @@ public class InventorySystem : MonoBehaviour
     private int haulWeight;
     private int haulPrice;
     private bool justAddedToInv;
-    private List<GameObject> itemsHeld = new List<GameObject>();
+    private List<Product> itemsHeld = new List<Product>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,6 +22,7 @@ public class InventorySystem : MonoBehaviour
         haulWeight = 0;
         haulPrice = 0;
         justAddedToInv = false;
+        
     }
 
     // Update is called once per frame
@@ -31,46 +32,62 @@ public class InventorySystem : MonoBehaviour
         justAddedToInv = false;
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
-            foreach (GameObject item in itemsHeld)
+            foreach (Product item in itemsHeld)
             {
-                Instantiate(item, player.transform.position, player.transform.rotation);
-                itemsHeld.Remove(item);
+                GameObject obj = item.GetObject();
+                if (obj != null)
+                {
+                    Instantiate(obj, player.transform.position, player.transform.rotation);
+                }
+                haulWeight -= item.GetWeight();
+                haulPrice -= item.GetPrice();
             }
+            itemsHeld.Clear();
         }
     }
 
-    public void AddToList(GameObject other)
+    public void AddToList(Product other)
     {
         itemsHeld.Add(other);
     }
 
-/*
+
     public void OnTriggerEnter(Collider other)
     {
+        UnityEngine.Debug.Log("Trigger entered");
         Product item = other.gameObject.GetComponent<Product>();
-        Rigidbody rb = item.GetComponent<Rigidbody>();
+        UnityEngine.Debug.Log("Accepted item");
+        Rigidbody rb = item.GetObject().GetComponent<Rigidbody>();
+        UnityEngine.Debug.Log("Created rigidbody");
         bool isKinematic = rb.isKinematic;
-        if (item.gameObject.tag == "sellingProduct" && item.IsStorable())
+        if (item.gameObject.CompareTag("sellingProduct") && item.IsStorable())
         {
+            UnityEngine.Debug.Log("Triggered by product! Testing if can store");
             if (100 >= (haulWeight + item.GetWeight()))
             {
-                //itemsHeld.Add(item);
+                UnityEngine.Debug.Log("Trying to store item...");
+                itemsHeld.Add(item);
+                UnityEngine.Debug.Log(item.GetProductName() + " has been added to list");
                 haulWeight += item.GetWeight();
                 haulPrice += item.GetPrice();
-                Destroy(item);
+                UnityEngine.Debug.Log("Trying to destroy item...");
+                Destroy(item.GetObject());
+                UnityEngine.Debug.Log("Item should have been destroyed.");
                 justAddedToInv = true;
+                
             }
             else
             {
-                GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You can't hold that much! Hit the gym.");
+                Debug.Log("FUCK!");
+                //GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You can't hold that much! Hit the gym.");
             }
         }
         else
         {
-            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
+           //GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
         }
     }
-*/
+
 
     public int GetHaulWeight()
     {
