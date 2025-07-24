@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 8846994875194936405}
   - component: {fileID: 7534117358919295749}
   - component: {fileID: 6625675000013612406}
+  - component: {fileID: -5823723974797187606}
   m_Layer: 0
   m_Name: Cigarettes
   m_TagString: sellingProduct
@@ -266,6 +267,18 @@ MonoBehaviour:
   storable: 1
   price: 5
   weight: 1
+--- !u!114 &-5823723974797187606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4133346927889407758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5062113961490596330
 GameObject:
   m_ObjectHideFlags: 0

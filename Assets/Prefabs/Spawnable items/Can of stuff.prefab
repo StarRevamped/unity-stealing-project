@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 3150922235411114676}
   - component: {fileID: 1562555373997542928}
   - component: {fileID: -2765786035998253836}
+  - component: {fileID: 2960998638490066806}
+  - component: {fileID: 4515501015484972263}
   m_Layer: 0
   m_Name: Can of stuff
   m_TagString: sellingProduct
@@ -181,6 +183,39 @@ MonoBehaviour:
   storable: 1
   price: 2
   weight: 2
+--- !u!114 &2960998638490066806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636219883344912292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4515501015484972263
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5636219883344912292}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &6170620317086069728
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 4959d4bf-7d9e-4c99-936e-835973598160
+  instanceId: 6f5ca993-9dd5-4bb2-ac23-4a8907f00cef
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
