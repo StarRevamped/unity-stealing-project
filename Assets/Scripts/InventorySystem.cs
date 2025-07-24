@@ -27,7 +27,7 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         justAddedToInv = false;
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
