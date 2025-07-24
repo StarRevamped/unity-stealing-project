@@ -10,6 +10,22 @@ public class Product : MonoBehaviour
     public int price;
     public int weight;
 
+    public void OnTriggerEnter(Collider other)
+    {
+        if (item.GetComponent<Rigidbody>().isKinematic && storable)
+        {
+            InventorySystem inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<InventorySystem>();
+                if (100 >= (inventory.GetHaulWeight() + weight))
+                {
+                    inventory.AddToList(item);
+                    inventory.SetHaulWeight(inventory.GetHaulWeight() + price);
+                    inventory.SetHaulPrice(inventory.GetHaulPrice() + price);
+                    Destroy(item);
+                    inventory.SetJustAddedToInv(true);
+                }
+        }
+    }
+
     public String GetProductName()
     {
         return productName;

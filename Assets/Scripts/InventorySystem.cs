@@ -14,7 +14,7 @@ public class InventorySystem : MonoBehaviour
     private int haulWeight;
     private int haulPrice;
     private bool justAddedToInv;
-    private List<Product> itemsHeld = new List<Product>();
+    private List<GameObject> itemsHeld = new List<GameObject>();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,11 +27,11 @@ public class InventorySystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
         justAddedToInv = false;
         if (OVRInput.GetDown(OVRInput.Button.Four))
         {
-            foreach (Product item in itemsHeld)
+            foreach (GameObject item in itemsHeld)
             {
                 Instantiate(item, player.transform.position, player.transform.rotation);
                 itemsHeld.Remove(item);
@@ -39,16 +39,22 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
+    public void AddToList(GameObject other)
+    {
+        itemsHeld.Add(other);
+    }
+
+/*
     public void OnTriggerEnter(Collider other)
     {
         Product item = other.gameObject.GetComponent<Product>();
-        //Rigidbody rb = item.GetComponent<Rigidbody>();
-        //bool isKinematic = rb.isKinematic;
+        Rigidbody rb = item.GetComponent<Rigidbody>();
+        bool isKinematic = rb.isKinematic;
         if (item.gameObject.tag == "sellingProduct" && item.IsStorable())
         {
-            if (100 >= (haulWeight += item.GetWeight()))
+            if (100 >= (haulWeight + item.GetWeight()))
             {
-                itemsHeld.Add(item);
+                //itemsHeld.Add(item);
                 haulWeight += item.GetWeight();
                 haulPrice += item.GetPrice();
                 Destroy(item);
@@ -64,17 +70,31 @@ public class InventorySystem : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "You have to hold that.");
         }
     }
+*/
 
     public int GetHaulWeight()
     {
         return haulWeight;
     }
+    public void SetHaulWeight(int value)
+    {
+        haulWeight += value;
+    }
     public int GetHaulPrice()
     {
         return haulPrice;
+    }
+    public void SetHaulPrice(int value)
+    {
+        haulPrice += value;
     }
     public bool GetJustAddedToInv()
     {
         return justAddedToInv;
     }
+    public void SetJustAddedToInv(bool value)
+    {
+        justAddedToInv = value;
+    }
+    
 }
