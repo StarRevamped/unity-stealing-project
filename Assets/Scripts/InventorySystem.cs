@@ -16,7 +16,7 @@ public class InventorySystem : MonoBehaviour
     void Start()
     {
         itemsHeld.Clear();
-        haulWeight = 0;
+        haulWeight = 1;
         haulPrice = 0;
     }
 

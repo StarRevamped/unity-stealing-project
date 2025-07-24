@@ -5,16 +5,18 @@ public class NewMonoBehaviourScript : MonoBehaviour
 {
     private InventorySystem weight;
     public TextMeshProUGUI invText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        weight = GetComponent<InventorySystem>();
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        weight = player.GetComponent<InventorySystem>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        invText.text = "Weight: " + weight.haulWeight + "/100";
+        if (weight != null)
+        {
+            invText.text = "Weight: " + weight.GetHaulWeight().ToString() + "/100";
+        }
     }
 }
- 
