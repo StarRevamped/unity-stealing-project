@@ -1,4 +1,4 @@
-/*
+
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
@@ -16,7 +16,6 @@ public class InventorySystem : MonoBehaviour
     private int haulPrice;
     private bool justAddedToInv;
     private List<Product> itemsHeld = new List<Product>();
-    public static InventorySystem Instance;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,7 +23,7 @@ public class InventorySystem : MonoBehaviour
         haulWeight = 0;
         haulPrice = 0;
         justAddedToInv = false;
-        itemsHeld.Add(new Product());
+        
     }
 
     // Update is called once per frame
@@ -48,14 +47,12 @@ public class InventorySystem : MonoBehaviour
         }
     }
 
-    public void AddItem(Product item, int quantity = 1)
+    public void AddToList(Product other)
     {
-        if (item.IsStorable())
-        {
-            itemsHeld.Add(item);
-        }
+        itemsHeld.Add(other);
     }
-/*
+
+
     public void OnTriggerEnter(Collider other)
     {
         UnityEngine.Debug.Log("Trigger entered");
@@ -119,4 +116,3 @@ public class InventorySystem : MonoBehaviour
     }
     
 }
-*/

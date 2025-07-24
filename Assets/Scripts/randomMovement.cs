@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.XR.OpenXR.Input;
 
-public class InputTesting : MonoBehaviour
+public class randomMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,8 +11,6 @@ public class InputTesting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OVRInput.GetDown(OVRInput.Button.One)){
-            UnityEngine.Debug.Log("FUCK YESSSSSSS");
-        }
+        
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3468721728170755606}
   - component: {fileID: 721304870512237974}
   - component: {fileID: 7938744476134064495}
-  - component: {fileID: -7350461988263146456}
+  - component: {fileID: 6885388134755346698}
   m_Layer: 6
   m_Name: customer
   m_TagString: Untagged
@@ -178,7 +178,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-7350461988263146456
+--- !u!114 &6885388134755346698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,9 +187,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2023808067341169601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b58303c24067604bae2b2f3efb51fbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 143345bcbd9d1a444b1020fd426813c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 721304870512237974}
-  range: 50
-  centrePoint: {fileID: 9193953124979632717}
