@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 0372671b-ea77-499d-948a-e4cca005e9d9
+  instanceId: fb63d5bd-7331-4f36-afa4-f4f528d3fce5
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
@@ -71,7 +71,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
   _pointableElement: {fileID: 2651539069048373447}
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 2510885030371868208}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 2510885030371868208}
   - component: {fileID: 1390407975572481501}
   - component: {fileID: 7987778480271744475}
-  - component: {fileID: -9074213546687194466}
   m_Layer: 0
   m_Name: Medicine Bottle
   m_TagString: sellingProduct
@@ -325,18 +324,6 @@ MonoBehaviour:
   storable: 1
   price: 20
   weight: 2
---- !u!114 &-9074213546687194466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7062580030660078835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7964547273366917338
 GameObject:
   m_ObjectHideFlags: 0

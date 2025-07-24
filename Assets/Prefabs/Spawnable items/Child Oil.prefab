@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5790211693791480040}
   - component: {fileID: 8803953434735176434}
   - component: {fileID: 7025688193551705838}
-  - component: {fileID: 3725879298903491634}
   m_Layer: 0
   m_Name: Child Oil
   m_TagString: sellingProduct
@@ -184,18 +183,6 @@ MonoBehaviour:
   _rigidbody: {fileID: 8803953434735176434}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
---- !u!114 &3725879298903491634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746644748690818094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1987060122954923047
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: cf405b7b-acd0-4010-9071-fa7854560f65
+  instanceId: 6cceb158-3b05-4295-9515-7cdcad243679
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8

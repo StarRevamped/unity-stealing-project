@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5490175940374040210}
   - component: {fileID: 7644286858071171827}
   - component: {fileID: -8956776508507114688}
-  - component: {fileID: -7720922995121388057}
   m_Layer: 0
   m_Name: Sugar box
   m_TagString: sellingProduct
@@ -180,18 +179,6 @@ MonoBehaviour:
   storable: 1
   price: 5
   weight: 7
---- !u!114 &-7720922995121388057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1871948965516854298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3809657586313467892
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 2b362074-a209-44a0-9c96-6e92adbe42ac
+  instanceId: 85c7bed2-32eb-4d96-ad3a-02468d5e59a9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8

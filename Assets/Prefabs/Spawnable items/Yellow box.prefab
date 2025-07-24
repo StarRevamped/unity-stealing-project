@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 7009259069287358003}
   - component: {fileID: 7506848231887102908}
   - component: {fileID: 5720058281631870587}
-  - component: {fileID: -897302885626442121}
   m_Layer: 0
   m_Name: Yellow box
   m_TagString: sellingProduct
@@ -180,18 +179,6 @@ MonoBehaviour:
   storable: 1
   price: 3
   weight: 10
---- !u!114 &-897302885626442121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3754090136438210081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d551cfad1f59cd4cb0e39b82fa7fe97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &7374973407537364225
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 73c91116-a310-4c99-8b62-4501f537ec04
+  instanceId: 4b3b603a-a26e-4daa-b06b-df21da3bade4
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
